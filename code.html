@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-container": "#dc2626", "inverse-surface": "#213145", "surface-container-high": "#dce9ff", "tertiary-fixed-dim": "#bec6e0", "surface-bright": "#f8f9ff", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "on-primary": "#ffffff", "secondary-container": "#316bf3", "primary": "#b70011", "outline": "#916f6b", "on-secondary-fixed-variant": "003ea8", "outline-variant": "#e6bdb8", "tertiary": "#51596f", "primary-fixed": "#ffdad6", "primary-fixed-dim": "#ffb4ab", "on-secondary": "#ffffff", "surface-tint": "#bf0715", "inverse-primary": "#ffb4ab", "on-secondary-container": "#fefcff", "on-surface": "#0b1c30", "error-container": "#ffdad6", "surface-container-highest": "#d3e4fe", "tertiary-fixed": "#dae2fd", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eaf1ff", "surface-variant": "#d3e4fe", "secondary-fixed": "#dbe1ff", "on-secondary-fixed": "#00174b", "on-tertiary-fixed": "#131b2e", "on-error": "#ffffff", "on-tertiary": "#ffffff", "on-background": "#0b1c30", "background": "#f8f9ff", "surface-dim": "#cbdbf5", "on-primary-fixed-variant": "#93000b", "on-surface-variant": "#5c403c", "on-tertiary-fixed-variant": "#3f465c", "secondary": "#0051d5", "on-primary-fixed": "#410002", "on-primary-container": "#fff6f5", "on-error-container": "#93000a", "error": "#ba1a1a", "surface": "#f8f9ff", "on-tertiary-container": "#f8f7ff", "secondary-fixed-dim": "#b4c5ff", "tertiary-container": "#6a7188" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-sm": "0.5rem", "margin": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem" }, fontFamily: { "body-sm": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "price-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "price-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "800" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }], "price-sm": ["16px", { lineHeight: "20px", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.015em", fontWeight: "700" }], "price-lg": ["24px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "800" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }], "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "26px", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.06)]"><div class="bg-inverse-surface text-inverse-on-surface py-1.5 px-gutter"><div class="max-w-[1320px] mx-auto flex flex-col md:flex-row items-center justify-between gap-1 text-[11px] font-label-sm tracking-wide"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-primary-fixed">local_shipping</span><span>🇨🇴 Envíos rápidos a toda Colombia (Bogotá, Medellín, Cali, Barranquilla y más)</span></div><div class="hidden lg:flex items-center gap-1.5 text-surface-container-high"><span class="material-symbols-outlined text-[15px] text-secondary-fixed">verified_user</span><span>Garantía de compatibilidad 100% y repuestos certificados</span></div><div class="flex items-center gap-4"><a class="flex items-center gap-1 hover:text-primary-fixed-dim transition-colors" href="https://wa.me/573109876543" target="_blank"><span class="material-symbols-outlined text-[15px] text-[#25D366]">chat</span><span>WhatsApp: +57 310 987 6543</span></a><span class="text-tertiary">|</span><a class="hover:text-primary-fixed-dim transition-colors" data-path="mi-cuenta" href="#">Mi Cuenta</a></div></div></div><div class="h-20 max-w-[1320px] mx-auto px-gutter flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="AutoParts Colombia Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5DARRoP09XUbnwq25lzeXzJO30It9Kep5YLrLClr_pBj4t-S5iEsFYawyvHf3NpHi8DyqvkeZME6Qm4_3sYqyQSRmnS2E9y4YfhHffIBY_xDVFnbZXXBzqzpvUwCVf2c48Az-mq6VbJ4K0jupAQQUBj6jZ4c_wW-UnO7RAjnJZx7VHJdpkKPzvX7phrq2PNLD_JB1ci5A8mZYVJa2CYUue6EFx6MZUyBP8PLPzDPU-W4xQmDKS_c8SzHp"/><a class="text-headline-sm font-headline-sm tracking-tight text-on-surface uppercase flex flex-col leading-none" data-path="catalogo-general" href="#"><span class="font-headline-md text-primary tracking-tighter">AUTOPARTS</span><span class="text-[10px] tracking-[0.2em] text-tertiary font-label-sm font-semibold">COLOMBIA</span></a></div><div class="flex-1 max-w-2xl hidden md:block"><form action="#" class="relative flex items-center bg-surface-container-low rounded-xl p-1 shadow-[0_1px_3px_0_rgba(15,23,42,0.06)]"><button class="flex items-center gap-1.5 bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-lg text-label-sm font-label-sm shadow-[0_1px_2px_rgba(0,0,0,0.05)] hover:bg-surface-container transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[16px] text-primary">directions_car</span><span class="truncate max-w-[140px]">Seleccionar Vehículo</span><span class="material-symbols-outlined text-[14px] text-tertiary">expand_more</span></button><div class="h-5 w-[1px] bg-outline-variant/40 mx-2 shrink-0"></div><input class="w-full bg-transparent px-2 py-1.5 text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none" placeholder="Buscar por nombre, código OEM o referencia (ej. BP-4521, Filtro de aceite)..." type="text"/><button class="bg-primary-container hover:bg-primary text-on-primary w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors shadow-sm" type="submit"><span class="material-symbols-outlined text-[20px]">search</span></button></form></div><div class="flex items-center gap-space-md shrink-0"><a class="hidden xl:flex items-center gap-2 p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="soporte-tecnico" href="#"><span class="material-symbols-outlined text-secondary text-[24px]">support_agent</span><div class="flex flex-col text-left"><span class="text-label-sm font-label-sm text-tertiary leading-tight">Soporte</span><span class="text-body-sm font-label-md font-semibold text-on-surface leading-tight">Mecánico</span></div></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="lista-de-deseos" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-label-sm w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></a><a class="flex items-center gap-2.5 bg-surface-container-low hover:bg-surface-container px-3 py-2 rounded-xl transition-colors" data-path="carrito-de-compras" href="#"><div class="relative flex items-center"><span class="material-symbols-outlined text-primary text-[24px]">shopping_cart</span><span class="absolute -top-1.5 -right-2 bg-primary-container text-on-primary text-[10px] font-label-sm w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span></div><div class="hidden sm:flex flex-col text-left"><span class="text-[10px] font-label-sm text-tertiary uppercase leading-none">Carrito</span><span class="text-price-sm font-price-sm text-on-surface leading-tight">$264.800</span></div></a><a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-sm" data-path="perfil-de-usuario" href="#"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></a></div></div><div class="bg-surface-container-lowest shadow-[0_1px_4px_rgba(11,28,48,0.03)]"><div class="max-w-[1320px] mx-auto px-gutter"><nav class="flex items-center gap-space-lg overflow-x-auto py-2.5 scrollbar-none text-body-sm" data-active-classes="text-primary font-bold"><a class="font-label-md text-on-surface-variant hover:text-on-surface flex items-center gap-1 shrink-0 font-semibold" data-path="todas-las-categorias" href="#">Categorías Catálogo</a><span class="text-outline-variant/60">|</span><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-medium" data-path="repuestos-frenos" href="#">Frenos</a><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-medium" data-path="repuestos-motor" href="#">Motor</a><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-medium" data-path="filtros-automotrices" href="#">Filtros</a><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-medium" data-path="suspension-y-direccion" href="#">Suspensión &amp; Dirección</a><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-medium" data-path="lubricantes-y-fluidos" href="#">Lubricantes</a><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-medium" data-path="sistema-electrico-y-baterias" href="#">Eléctrico &amp; Baterías</a><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-medium" data-path="accesorios-automotrices" href="#">Accesorios</a><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-medium" data-path="marcas-aliadas" href="#">Marcas Aliadas</a><span class="text-outline-variant/60">|</span><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-semibold" data-path="ofertas-especiales" href="#">Ofertas Especiales</a><a class="text-on-surface-variant hover:text-on-surface shrink-0 font-semibold" data-path="selector-por-vehiculo" href="#">Selector por Vehículo</a></nav></div></div></header><main class="w-full pt-36 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- ==================== HERO & VEHICLE MATCHER SECTION ==================== -->
+<section class="relative bg-inverse-surface text-inverse-on-surface overflow-hidden pt-10 pb-16 lg:pb-24">
+<!-- Atmospheric Ambient Shapes (Contained) -->
+<div class="absolute -top-32 -right-24 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-1/4 w-80 h-80 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Hero Subtle Blueprint Grid Backdrop -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-[1320px] mx-auto px-gutter relative z-10">
+<!-- Top Badging & Micro Tag -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm tracking-wide uppercase shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Despacho 24/48h Colombia
+        </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest/10 text-surface-dim font-label-sm text-label-sm tracking-wide">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">verified</span> OEM &amp; Aftermarket Certificado
+        </span>
+</div>
+<!-- Main Grid: Pitch + Selector Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Headline & Subheadline (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<h1 class="font-headline-xl text-headline-xl text-surface-container-lowest tracking-tight">
+            Encuentra el repuesto exacto para tu vehículo
+          </h1>
+<p class="font-body-lg text-body-lg text-surface-dim leading-relaxed">
+            Más de <span class="text-surface-container-lowest font-bold">45.000 referencias</span> originales y homologadas con despacho exprés a toda Colombia. Garantía de compatibilidad 100% certificada por VIN y catálogo técnico.
+          </p>
+<!-- Core Stat Tickers -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-md">
+<div class="bg-surface-container-lowest/5 p-3 rounded-lg">
+<span class="block font-headline-md text-headline-md text-surface-container-lowest">45K+</span>
+<span class="block font-label-sm text-label-sm text-surface-dim leading-tight">Repuestos en Stock</span>
+</div>
+<div class="bg-surface-container-lowest/5 p-3 rounded-lg">
+<span class="block font-headline-md text-headline-md text-primary-fixed">24/48h</span>
+<span class="block font-label-sm text-label-sm text-surface-dim leading-tight">Entrega Nacional</span>
+</div>
+<div class="bg-surface-container-lowest/5 p-3 rounded-lg">
+<span class="block font-headline-md text-headline-md text-secondary-fixed">100%</span>
+<span class="block font-label-sm text-label-sm text-surface-dim leading-tight">Calidad Certificada</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Dashboard Vehicle Matcher (7 cols) -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest text-on-surface rounded-xl p-space-lg lg:p-8 shadow-2xl relative">
+<!-- Selector Header -->
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">directions_car</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Configura tu vehículo</h2>
+<p class="font-body-sm text-body-sm text-tertiary">Filtra instantáneamente repuestos compatibles sin margen de error</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-high px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">tune</span> Catálogo Dinámico
+              </span>
+</div>
+<!-- Cascade Form Dropdowns (2x2 Grid) -->
+<form class="grid grid-cols-1 sm:grid-cols-2 gap-space-md" id="vehicle-finder-form" onsubmit="event.preventDefault();">
+<!-- Dropdown 1: Marca -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-tertiary uppercase flex items-center gap-1" for="car-brand">
+<span>1. Marca</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 pl-3 pr-9 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest appearance-none shadow-sm cursor-pointer" id="car-brand">
+<option disabled="" selected="" value="">Selecciona Marca...</option>
+<option value="chevrolet">Chevrolet</option>
+<option value="renault">Renault</option>
+<option value="mazda">Mazda</option>
+<option value="toyota">Toyota</option>
+<option value="kia">Kia</option>
+<option value="ford">Ford</option>
+<option value="nissan">Nissan</option>
+<option value="volkswagen">Volkswagen</option>
+<option value="hyundai">Hyundai</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-tertiary pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Dropdown 2: Modelo -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-tertiary uppercase flex items-center gap-1" for="car-model">
+<span>2. Modelo</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 pl-3 pr-9 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest appearance-none shadow-sm cursor-pointer" id="car-model">
+<option disabled="" selected="" value="">Selecciona Modelo...</option>
+<option value="onix">Onix / Onix Turbo</option>
+<option value="duster">Duster</option>
+<option value="mazda3">Mazda 3</option>
+<option value="hilux">Hilux</option>
+<option value="picanto">Picanto</option>
+<option value="fiesta">Fiesta</option>
+<option value="tracker">Tracker Turbo</option>
+<option value="sandero">Sandero / Stepway</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-tertiary pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Dropdown 3: Año -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-tertiary uppercase flex items-center gap-1" for="car-year">
+<span>3. Año</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 pl-3 pr-9 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest appearance-none shadow-sm cursor-pointer" id="car-year">
+<option disabled="" selected="" value="">Selecciona Año...</option>
+<option value="2024">2024</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015 y anteriores</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-tertiary pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Dropdown 4: Motor / Versión -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-tertiary uppercase flex items-center gap-1" for="car-engine">
+<span>4. Motorización</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 pl-3 pr-9 bg-surface-container-low text-on-surface rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest appearance-none shadow-sm cursor-pointer" id="car-engine">
+<option disabled="" selected="" value="">Motor / Cilindraje...</option>
+<option value="1.0-turbo">1.0L Turbo 3-Cilindros</option>
+<option value="1.6-16v">1.6L 16V K4M / H4M</option>
+<option value="2.0-skyactiv">2.0L Skyactiv-G</option>
+<option value="2.8-diesel">2.8L Turbodiésel 1GD-FTV</option>
+<option value="1.25-mpi">1.25L Kappa MPI</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-tertiary pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- CTA Submit Button Across Full Width -->
+<div class="sm:col-span-2 pt-2">
+<button class="w-full h-13 py-3.5 px-6 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-3 transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.99]" type="submit">
+<span class="material-symbols-outlined text-[24px]">search_insights</span>
+<span>Buscar Repuestos Compatibles (2.410)</span>
+<span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Quick Frequent Search Chips -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center gap-1.5 text-body-sm text-tertiary">
+<span class="font-label-sm text-label-sm text-on-surface">Búsquedas frecuentes:</span>
+<a class="px-2 py-1 bg-surface-container-low hover:bg-surface-container-high rounded text-on-surface text-body-sm transition-colors" href="#">Pastillas Onix Turbo</a>
+<a class="px-2 py-1 bg-surface-container-low hover:bg-surface-container-high rounded text-on-surface text-body-sm transition-colors" href="#">Kit embrague Duster</a>
+<a class="px-2 py-1 bg-surface-container-low hover:bg-surface-container-high rounded text-on-surface text-body-sm transition-colors" href="#">Filtro Mazda 3 Skyactiv</a>
+<a class="px-2 py-1 bg-surface-container-low hover:bg-surface-container-high rounded text-on-surface text-body-sm transition-colors" href="#">Amortiguadores Spark GT</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 4 PILLARS & TRUST TICKER ==================== -->
+<section class="bg-surface-container-lowest py-6 shadow-sm">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low/60">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Despacho Inmediato</h3>
+<p class="font-body-sm text-body-sm text-tertiary">Coordinadora, Servientrega y Envía a +1.100 municipios.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low/60">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">security</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pagos 100% Protegidos</h3>
+<p class="font-body-sm text-body-sm text-tertiary">PSE, Tarjetas, Nequi y opción Contraentrega disponible.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low/60">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-inverse-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">engineering</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Asesoría Mecánica</h3>
+<p class="font-body-sm text-body-sm text-tertiary">Validación técnica de chasis con bases de concesionario.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low/60">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed-dim text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">published_with_changes</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Garantía de 30 Días</h3>
+<p class="font-body-sm text-body-sm text-tertiary">Cambios directos y devoluciones sin costos ocultos.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== POPULAR CATEGORIES (BENTO GRID) ==================== -->
+<section class="py-space-xl max-w-[1320px] mx-auto px-gutter w-full">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Catálogo Organizado</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Explora por Sistemas del Vehículo</h2>
+</div>
+<a class="font-label-md text-label-md text-secondary hover:text-primary flex items-center gap-1 font-semibold transition-colors" href="#">
+<span>Ver todas las 18 categorías</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Categories Grid (8 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Frenos -->
+<a class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" href="#">
+<div class="relative h-44 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up studio photograph of high performance ceramic brake pads and slotted ventilated disc brake rotor on a dark clean slate background with sharp studio rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBQMCGC_SxCEKawZAn90jICOBx08bRJU5z9Xn0BIwLUMS4hZ_MuCbAVsiDmmW_EHjCIewMrt_iYrqlPE3JwDNNOpyoRXc9wF1FX6NaItZHoLEqpj6A6HFyDAt4MLD4zbltkUHuhM_3jcPSlzceerY8zwzKf0CgF8Vw8cs0mTw9NccwoB5v8_uJ1VRdq3q0vNbOxOpCTSoYWKsoSm5pgKKPFgXFGhSCn3MqyNrT5RK7OaX_FKZJvCRpug"/>
+<span class="absolute top-3 right-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-1 rounded font-label-sm text-label-sm backdrop-blur-sm">
+            4.120 SKUs
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">album</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Sistema de Frenos</h3>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Pastillas cerámicas, discos ventilados, mordazas y líquidos DOT4/DOT5.1.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Explorar repuestos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</a>
+<!-- Card 2: Motor -->
+<a class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" href="#">
+<div class="relative h-44 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High precision automotive engine timing belt kit with tensioner pulleys and iridium spark plugs neatly laid out on industrial matte graphite surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYSABbFK1z2AU5NSrPsDdz1Z0JjWqC9FW9V_ve2MPMdPL1eQISOosC6OUEh6dUX3bwFosTnAdTQOjiZCeNUCZ1j3iItj4x37wD--LisolY6pKtG4aR07aP-MS9cld9kSnE3z8c46UQSHCZD_WTmTAAuPrRF_giY2bmr5SsYTR0rIJZKH-WKQNzNUkjOug8Sa8UOaiyJatADvDU0I6UaDW3NABux5r5dfG6wXPXRqbyc8_Z-vsNpFG3HA"/>
+<span class="absolute top-3 right-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-1 rounded font-label-sm text-label-sm backdrop-blur-sm">
+            8.950 SKUs
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Motor y Distribución</h3>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Correas Gates, kits de tiempo, empaquetaduras y bujías Iridium.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Explorar repuestos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</a>
+<!-- Card 3: Suspensión -->
+<a class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" href="#">
+<div class="relative h-44 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Automotive gas shock absorber with yellow suspension spring and steering tie rod ends in a clean mechanical workshop setup with neutral diffused light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdWDgTwumLlOpyQ4bhFGq1uz0E2gkAkWrNfchhyHcKuKMhDy47RSG43UiOKyqmnqLxdn9FSGEVeBSpnJLT318IbPmXbUON5JDNFD_O4V5GDl9Ovk_ZAx5-yEhwNf4DPLEsVhfHzHz7gvhx_ZGCeExYd_fdumrChmiQR2NJUFh4LBAShTBhTSYDQEg4BUrYUfCvrQYBkj7BAxOCHD7ymiMq9fX2xp3kEzTQAW1lcDLd6Osreu0YG2Iu6A"/>
+<span class="absolute top-3 right-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-1 rounded font-label-sm text-label-sm backdrop-blur-sm">
+            6.340 SKUs
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">swap_vertical_circle</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Suspensión y Dirección</h3>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Amortiguadores Monroe a gas, espirales, terminales y brazos axiales.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Explorar repuestos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</a>
+<!-- Card 4: Filtros -->
+<a class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" href="#">
+<div class="relative h-44 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High quality yellow pleated automotive air filter and metallic canister spin-on oil filter presented in a high-tech studio environment with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw1CJ7ZcLZR6ERbYfpztXk3iv37VBeTRyQEmV-UsdsjHVgMDuP-gNqofbc_pAEc88UJYf-4-6OKWbMLDXhzKREN5fVFm63FXJLz3TcZRYIMhO3wyEwjbegamKGxz8av4aC9rlavFc63oYKxGft6_cyFIni2hIuKUvY94Mk_fpPFnxoRxukAct7LX_VigpfdEeye3J6a1PpGP0YjnXuRJs1loAPA2jZ0WEGVW070LGqxp2c_s1TnTrQSg"/>
+<span class="absolute top-3 right-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-1 rounded font-label-sm text-label-sm backdrop-blur-sm">
+            3.820 SKUs
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">filter_alt</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Filtros de Alto Flujo</h3>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Filtros de aceite, aire de motor, combustible y cabina antibacteriales.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Explorar repuestos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</a>
+<!-- Card 5: Lubricantes -->
+<a class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" href="#">
+<div class="relative h-44 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Premium synthetic engine oil gallon containers Mobil and Castrol lined up on polished metallic workshop counter with glowing highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR262JmAWRB7EaMjPv0j8IcXlqa5PQFP8_vnKWdmvER5XSjTrTJ0WHMEDPpeshdfaqQBDLp0fq7dhHxTQnc03OKmqC5zNVECfDTDBLt-LoRAMM1d3XJT4g1AQq-XaW9DFfO4oSdMQprGHPAcDg8exGDAjhjORJ-efroAJilQstLCQFqRZXEJVoQrVZ7F08UUF2CqCF0LjW8MSG3eFhd0O3or9gVAj3MTleBpzOJxCa3RfYml3xwOHCzQ"/>
+<span class="absolute top-3 right-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-1 rounded font-label-sm text-label-sm backdrop-blur-sm">
+            1.290 SKUs
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Lubricantes y Fluidos</h3>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Aceites sintéticos 5W-30, 10W-40, valvulinas y refrigerantes orgánicos.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Explorar repuestos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</a>
+<!-- Card 6: Eléctrico -->
+<a class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" href="#">
+<div class="relative h-44 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern heavy duty car battery with silver terminal caps and an automotive alternator with copper coil windings in clear view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUGywVYEczMd6uvkoqevZYk7AgUOdlN3EAgpVLt92-6fPs-ecYE9N5Fe181x3AcXX13g-7ONezNjllYT7GYJq3A0uow7mUSVnvFNVnVq6rQYAyBY5Fvsz-UVm3OOlllU4XvEhk5HYMbgzZLNCjHzkrmu4xJQW7h2F__ari7XHfAf8dAeNkjRM2GXD2cPGyTWB5djxttcqDgIx4upiwDb9B5861EY8OfGCCEN7TcB7Z7XA66Dk78HRTGA"/>
+<span class="absolute top-3 right-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-1 rounded font-label-sm text-label-sm backdrop-blur-sm">
+            2.840 SKUs
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">battery_charging_full</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Baterías y Eléctrico</h3>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Baterías Bosch, Mac Silver selladas, alternadores y sensores de oxígeno.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Explorar repuestos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</a>
+<!-- Card 7: Iluminación -->
+<a class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" href="#">
+<div class="relative h-44 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High intensity white LED automotive headlight bulbs with aluminum heat sink fans glowing against a dark blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSUntgAX8jGGEs_Ee8goZB0Neultp4UFU9EHRtKX6_iY6WfHNv118PJQB4sjPOpw0KAVByyjnMQQDjYY92oTEy1YrIVs7c53svQrlKseYkwv76BhHTZOBPIzu7CCvmv_q1CHtF4VCARIfrVrABK88846zYBIW7ema_u9uU6UM1zKNjxcjXbU_VcG0NJ7rfAnrNt3IxuN-4FXuuZed4rOPGe0WTC6gMsX3POfCnB-OCCLv2Gg17dPJlgQ"/>
+<span class="absolute top-3 right-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-1 rounded font-label-sm text-label-sm backdrop-blur-sm">
+            1.950 SKUs
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">light_mode</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Iluminación y Farolas</h3>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Bombillería LED Canbus Philips, halógenos Osram y exploradoras todoterreno.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Explorar repuestos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</a>
+<!-- Card 8: Embrague -->
+<a class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300" href="#">
+<div class="relative h-44 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Complete automotive clutch replacement kit including pressure plate friction disc and release bearing shot on pristine light grey reflective surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVii86j3ZzDXR8y9XsoGrLbneUMNlsmJodxCdxgHo-8TI_s_W8fcqrL95H85ocTomQmBBKsg4NGTLA29Ixf7jfUZFuNuE0HeoCzg-9t-XGNF7QkZ0ghthcX6-Cfhs2lEibPEgByxP_JtqgX9UKOWaq_YzEgGBrKT_V1fG0XQzdUlnACq2bxSWc8hCSJ7wS2p2Mna8FB1RWWfCAKB5W3I0mUJiOp0ge8M8jCxEnl8c2Rnth0UnQ2XtvAA"/>
+<span class="absolute top-3 right-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-1 rounded font-label-sm text-label-sm backdrop-blur-sm">
+            2.110 SKUs
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Embrague y Caja</h3>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Kits LUK y Valeo con prensa, disco de fricción y balinera hidráulica.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Explorar repuestos <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</a>
+</div>
+</section>
+<!-- ==================== FLASH PROMO BANNER & COUNTDOWN ==================== -->
+<section class="bg-primary-container text-on-primary py-12 relative overflow-hidden">
+<!-- Background engine graphic accents -->
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 pointer-events-none flex items-center justify-center">
+<span class="material-symbols-outlined text-[320px]">speed</span>
+</div>
+<div class="max-w-[1320px] mx-auto px-gutter relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-6 flex flex-col gap-2">
+<div class="inline-flex items-center gap-2 bg-on-primary/15 px-3 py-1 rounded-full w-fit">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Campaña Nacional</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl tracking-tight leading-tight">
+            Semana del Mantenimiento Preventivo
+          </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed leading-normal">
+            Hasta <span class="text-on-primary font-bold">35% de descuento</span> en Frenos, Amortiguadores y Kits de Reparación. Aplica cupón de taller para compras mayores a $300.000 COP.
+          </p>
+<div class="pt-2 flex flex-wrap items-center gap-space-sm">
+<div class="bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded font-mono font-label-md text-label-md flex items-center gap-2 shadow-sm">
+<span class="text-tertiary font-sans">Cupón:</span>
+<span class="font-bold text-primary tracking-wider">AUTOCOLOMBIA10</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary cursor-pointer hover:text-primary" title="Copiar cupón">content_copy</span>
+</div>
+<span class="text-primary-fixed font-body-sm text-body-sm">+10% Adicional en checkout</span>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col sm:flex-row items-center justify-end gap-space-lg">
+<!-- Countdown Clock Block -->
+<div class="flex items-center gap-2 bg-inverse-surface/40 backdrop-blur-md p-4 rounded-xl shadow-inner">
+<div class="flex flex-col items-center">
+<div class="w-14 h-14 bg-surface-container-lowest text-on-surface rounded-lg flex items-center justify-center font-headline-md text-headline-md font-bold shadow">
+                02
+              </div>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase mt-1">Días</span>
+</div>
+<span class="font-headline-md text-surface-container-lowest -mt-4">:</span>
+<div class="flex flex-col items-center">
+<div class="w-14 h-14 bg-surface-container-lowest text-on-surface rounded-lg flex items-center justify-center font-headline-md text-headline-md font-bold shadow">
+                14
+              </div>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase mt-1">Horas</span>
+</div>
+<span class="font-headline-md text-surface-container-lowest -mt-4">:</span>
+<div class="flex flex-col items-center">
+<div class="w-14 h-14 bg-surface-container-lowest text-on-surface rounded-lg flex items-center justify-center font-headline-md text-headline-md font-bold shadow">
+                38
+              </div>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase mt-1">Min</span>
+</div>
+<span class="font-headline-md text-surface-container-lowest -mt-4">:</span>
+<div class="flex flex-col items-center">
+<div class="w-14 h-14 bg-surface-container-lowest text-primary rounded-lg flex items-center justify-center font-headline-md text-headline-md font-bold shadow" id="countdown-seconds">
+                19
+              </div>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase mt-1">Seg</span>
+</div>
+</div>
+<a class="bg-surface-container-lowest hover:bg-surface-container text-primary font-headline-sm text-headline-sm px-6 py-4 rounded-lg shadow-xl transition-transform hover:scale-105 shrink-0 flex items-center gap-2" href="#">
+<span>Aprovechar Ofertas</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FEATURED PRODUCTS & BEST SELLERS ==================== -->
+<section class="py-space-xl max-w-[1320px] mx-auto px-gutter w-full">
+<!-- Section Header + Tabs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Catálogo Top</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Repuestos de Mayor Demanda</h2>
+</div>
+<!-- Segmented Navigation Filter Tabs -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl w-fit">
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm" type="button">
+          Más Vendidos en Colombia
+        </button>
+<button class="px-4 py-2 rounded-lg text-tertiary hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+          Novedades de Temporada
+        </button>
+<button class="px-4 py-2 rounded-lg text-tertiary hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+          Ofertas Flash
+        </button>
+</div>
+</div>
+<!-- Product Cards Grid (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Product Card 1: Bosch Pastillas -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+<div>
+<!-- Media Canvas -->
+<div class="relative bg-surface-container-low p-4 h-56 flex items-center justify-center overflow-hidden">
+<img class="max-h-full w-auto object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Bosch premium ceramic front brake pad set packed in signature OEM blue packaging on crisp studio background with technical schematics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7OelcogPU0n1kPZS14iD48RWFu-TUH5ZEVUhcPZaZG28VG-1T5_Ebdz-aXOf-aJXAy7Z4SfVQBAHNwXKXKFDfUeRTMXckvjUFxUwdGQvz62wjPnx93aHCiuRDr3I14ekC2Ia5G6BhHLYkx3YNRVDAJvN7eGbfzkc84i1g6S6PExd_vxdfpGHOCItgy9J0tYWXu-rTKP9AZ0oDigJUasC2kysiBBLmiD-RH1DDP6YPbMwo9je3IP0jvg"/>
+<!-- Badges -->
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-xs">
+                BOSCH
+              </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+                Verificado OEM
+              </span>
+</div>
+<div class="absolute top-3 right-3 flex flex-col items-end gap-1">
+<span class="px-2 py-0.5 rounded bg-[#ECFDF5] text-[#065F46] font-label-sm text-label-sm font-semibold">
+                En Stock
+              </span>
+<button aria-label="Guardar en favoritos" class="w-8 h-8 rounded-full bg-surface-container-lowest text-tertiary hover:text-primary flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Discount Tag -->
+<span class="absolute bottom-3 left-3 bg-primary-container text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">
+              -17% OFF
+            </span>
+</div>
+<!-- Content Meta -->
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-tertiary">
+<span>SKU: <span class="font-mono text-on-surface">BP-4521</span></span>
+<div class="flex items-center gap-1 text-[#F59E0B]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.9</span>
+<span class="text-tertiary">(142)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+              Pastillas de Freno Delanteras Cerámicas Bosch
+            </h3>
+<!-- Vehicle Match Banner -->
+<div class="bg-[#ECFDF5] text-[#065F46] p-2 rounded flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] shrink-0">check_circle</span>
+<span class="truncate">Chevrolet Onix 2020-2024 / Tracker</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+              Envío Gratis Bogotá y Medellín
+            </p>
+</div>
+</div>
+<!-- Pricing & Action -->
+<div class="p-space-md pt-0">
+<div class="flex items-baseline gap-2 mb-3">
+<span class="font-price-lg text-price-lg text-primary font-bold">$189.900</span>
+<span class="font-body-sm text-body-sm text-tertiary line-through">$229.900</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2: Mann Filter Kit -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+<div>
+<!-- Media Canvas -->
+<div class="relative bg-surface-container-low p-4 h-56 flex items-center justify-center overflow-hidden">
+<img class="max-h-full w-auto object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Mann-Filter bundled maintenance kit with 4 filters: cabin filter, engine air filter, fuel filter, and oil filter displayed in official packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6S5GPoQx-RWbxknJ97t8-g9UkLPOC1OK5aRC6bEvUHTITBQUcpSAWQjIB0FHTDhnuaa3Ax4Xf0V49Mv0-p-woki07_U4bLUtP7o35iGF_COBdAIS_tYeM3cxIT23DQa5KzjrmxZ4BpkEiiCfY4SupucgYu46DjwvPlSEAu07tiLeO-rrigJAblWaPXarr9wLoaS3cwouL1dhr5cZzdaU3gGGoECGfUtNqOIrHRvwQq1bZ0dqAJ2N3AA"/>
+<!-- Badges -->
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-xs">
+                MANN-FILTER
+              </span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm font-semibold">
+                Kit Ahorro
+              </span>
+</div>
+<div class="absolute top-3 right-3 flex flex-col items-end gap-1">
+<span class="px-2 py-0.5 rounded bg-[#ECFDF5] text-[#065F46] font-label-sm text-label-sm font-semibold">
+                Envío Inmediato
+              </span>
+<button aria-label="Guardar en favoritos" class="w-8 h-8 rounded-full bg-surface-container-lowest text-tertiary hover:text-primary flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<span class="absolute bottom-3 left-3 bg-primary-container text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">
+              -18% OFF
+            </span>
+</div>
+<!-- Content Meta -->
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-tertiary">
+<span>SKU: <span class="font-mono text-on-surface">MF-KIT-RN9</span></span>
+<div class="flex items-center gap-1 text-[#F59E0B]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">5.0</span>
+<span class="text-tertiary">(98)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+              Kit de 4 Filtros Mann-Filter (Aceite, Aire, Gasolina, Cabina)
+            </h3>
+<!-- Vehicle Match Banner -->
+<div class="bg-[#ECFDF5] text-[#065F46] p-2 rounded flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] shrink-0">check_circle</span>
+<span class="truncate">Renault Duster / Logan / Sandero 1.6</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Empaque sellado de fábrica
+            </p>
+</div>
+</div>
+<!-- Pricing & Action -->
+<div class="p-space-md pt-0">
+<div class="flex items-baseline gap-2 mb-3">
+<span class="font-price-lg text-price-lg text-primary font-bold">$144.500</span>
+<span class="font-body-sm text-body-sm text-tertiary line-through">$175.000</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3: Mobil 1 5W-30 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+<div>
+<!-- Media Canvas -->
+<div class="relative bg-surface-container-low p-4 h-56 flex items-center justify-center overflow-hidden">
+<img class="max-h-full w-auto object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Mobil 1 Advanced Full Synthetic 5W-30 motor oil silver gallon jug with official holographic authenticity seal against clean slate backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMxcKf4pWBdKQD2hBOMZKs2iBzBQ9v0AtYU4xPmku5nxTroZ0IQCcjDwkdYSbdKbFDgd3UVUJRTEBmT8X9DYZ9OqGLqbSdJ4Xs7jDfb2zqY1VcnW65FvhLUYozzM-rlbJ6-zuHAIMzccg_PJ-NWB07-kjfaDiVdWamcgD7RWBKXdKMAfHsTmU-TEtCZo-XDq0DWeRaCorlxwb4tZx-S0h7kWwQ15mmUp7QQ53I9_SdYnL26lNF9Ljwsg"/>
+<!-- Badges -->
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-xs">
+                MOBIL 1
+              </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">
+                Original Sellado
+              </span>
+</div>
+<div class="absolute top-3 right-3 flex flex-col items-end gap-1">
+<span class="px-2 py-0.5 rounded bg-[#ECFDF5] text-[#065F46] font-label-sm text-label-sm font-semibold">
+                En Stock
+              </span>
+<button aria-label="Guardar en favoritos" class="w-8 h-8 rounded-full bg-surface-container-lowest text-tertiary hover:text-primary flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<span class="absolute bottom-3 left-3 bg-primary-container text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">
+              -14% OFF
+            </span>
+</div>
+<!-- Content Meta -->
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-tertiary">
+<span>SKU: <span class="font-mono text-on-surface">MOB-5W30-GAL</span></span>
+<div class="flex items-center gap-1 text-[#F59E0B]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.9</span>
+<span class="text-tertiary">(315)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+              Aceite Sintético Mobil 1 Advanced Full Synthetic 5W-30
+            </h3>
+<!-- Compatibility Banner -->
+<div class="bg-surface-container-low text-on-surface p-2 rounded flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0">info</span>
+<span class="truncate">Universal Gasolina API SP / GF-6A</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+              QR de trazabilidad y holograma
+            </p>
+</div>
+</div>
+<!-- Pricing & Action -->
+<div class="p-space-md pt-0">
+<div class="flex items-line gap-2 mb-3">
+<span class="font-price-lg text-price-lg text-primary font-bold">$214.900</span>
+<span class="font-body-sm text-body-sm text-tertiary line-through">$249.000</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+<!-- Product Card 4: Monroe Amortiguadores -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+<div>
+<!-- Media Canvas -->
+<div class="relative bg-surface-container-low p-4 h-56 flex items-center justify-center overflow-hidden">
+<img class="max-h-full w-auto object-contain group-hover:scale-105 transition-transform duration-300" data-alt="Monroe OESpectrum pair of front gas pressurized automotive struts on industrial metallic plate with engineered suspension badges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdbagdSwVVNb3XbnUACOKrF7LN045fojJDjPoS0vzTnaORF1ZJA-2AQee9EUSEgRIJUgMwLueRvfAQL0ewQfldfUAIM_xiLRB-N6OCeS3zNZSTKtgrHtccD3VbXOkxxV6-Oe1bbDan-XwAkTqEN9SQC4cigIHsKBHOTqhONfBPW0ct-0Z97CcHzkG9Cnq22AEY0aJwrx4ktjqoQ1ee0Q3Q6LjOHlOhf13qwK8Hcl2BrdeJJYAhOamfPw"/>
+<!-- Badges -->
+<div class="absolute top-3 left-3 flex flex-col gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-xs">
+                MONROE
+              </span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-secondary font-label-sm text-label-sm font-semibold">
+                Garantía 2 Años
+              </span>
+</div>
+<div class="absolute top-3 right-3 flex flex-col items-end gap-1">
+<span class="px-2 py-0.5 rounded bg-[#ECFDF5] text-[#065F46] font-label-sm text-label-sm font-semibold">
+                En Stock
+              </span>
+<button aria-label="Guardar en favoritos" class="w-8 h-8 rounded-full bg-surface-container-lowest text-tertiary hover:text-primary flex items-center justify-center shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<span class="absolute bottom-3 left-3 bg-primary-container text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold">
+              -12% OFF
+            </span>
+</div>
+<!-- Content Meta -->
+<div class="p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-tertiary">
+<span>SKU: <span class="font-mono text-on-surface">MON-72901</span></span>
+<div class="flex items-center gap-1 text-[#F59E0B]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.8</span>
+<span class="text-tertiary">(76)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+              Par Amortiguadores Delanteros Gas Monroe OESpectrum
+            </h3>
+<!-- Vehicle Match Banner -->
+<div class="bg-[#ECFDF5] text-[#065F46] p-2 rounded flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] shrink-0">check_circle</span>
+<span class="truncate">Mazda 3 All New / Skyactiv 2014-2019</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+              Envío Asegurado Nacional
+            </p>
+</div>
+</div>
+<!-- Pricing & Action -->
+<div class="p-space-md pt-0">
+<div class="flex items-baseline gap-2 mb-3">
+<span class="font-price-lg text-price-lg text-primary font-bold">$489.900</span>
+<span class="font-body-sm text-body-sm text-tertiary line-through">$560.000</span>
+</div>
+<button class="w-full h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_cart</span>
+<span>Agregar al carrito</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== WHATSAPP TECHNICAL ADVISORY CALLOUT ==================== -->
+<section class="bg-surface-container-lowest py-space-xl my-4">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<div class="bg-surface-container-low rounded-xl p-space-lg lg:p-10 relative overflow-hidden shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
+<div class="lg:col-span-8 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span>Asesoría Técnica Gratuita con Chasis / VIN</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+              ¿No sabes con certeza qué repuesto le sirve a tu carro?
+            </h2>
+<p class="font-body-lg text-body-lg text-tertiary max-w-3xl leading-relaxed">
+              Envíanos una foto de tu <strong class="text-on-surface">matrícula o tarjeta de propiedad por WhatsApp</strong>. Nuestros mecánicos y asesores expertos verificarán el código OEM exacto en menos de 10 minutos para darte tranquilidad total.
+            </p>
+<div class="flex flex-wrap items-center gap-4 pt-2 text-body-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-[#25D366]">schedule</span>
+<span>Lunes a Sábado: 7:30 AM - 6:30 PM</span>
+</div>
+<span class="text-tertiary">|</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">flash_on</span>
+<span>Respuesta promedio: &lt; 8 minutos</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center">
+<a class="w-full sm:w-auto px-6 py-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-headline-sm text-headline-sm flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5" href="https://wa.me/573109876543?text=Hola%2C%20quisiera%20asesor%C3%ADa%20para%20comprar%20un%20repuesto%20para%20mi%20veh%C3%ADculo" target="_blank">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+<div class="flex flex-col text-left">
+<span class="text-label-sm leading-tight text-white/90">Hablar con mecánico</span>
+<span class="leading-tight font-bold">+57 310 987 6543</span>
+</div>
+</a>
+<span class="text-body-sm text-tertiary mt-2">Canal oficial de verificación técnica</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== BRAND PARTNERS TRUST GRID ==================== -->
+<section class="py-space-xl max-w-[1320px] mx-auto px-gutter w-full">
+<div class="text-center mb-space-lg">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Respaldo Global</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Trabajamos directamente con los fabricantes líderes a nivel mundial</h2>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">Cero intermediarios dudosos. Trazabilidad garantizada directamente con las fábricas.</p>
+</div>
+<!-- Clean Monochrome Automotive Brand Tiles (12 Brands) -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-space-sm">
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">BOSCH</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Tecnología Alemana</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">MANN-FILTER</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Líder en Filtración</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">GATES</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Correas y Mangueras</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">SKF</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Rodamientos OEM</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">NGK</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Bujías y Sensores</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">MONROE</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Amortiguadores OES</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">VALEO</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Embragues &amp; Farolas</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">CASTROL</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Lubricantes Edge</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">MOBIL 1</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Sintéticos Motor</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">ACDELCO</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Garantía General Motors</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">BREMBO</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Frenado Deportivo</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-col items-center justify-center h-20 shadow-xs hover:shadow-md transition-shadow group">
+<span class="font-headline-sm text-headline-sm font-black tracking-widest text-tertiary group-hover:text-primary transition-colors">LUK</span>
+<span class="text-[9px] font-label-sm text-tertiary/70 uppercase">Kits Schaeffler</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple countdown seconds micro-interaction
+  (function() {
+    var secEl = document.getElementById('countdown-seconds');
+    if (!secEl) return;
+    var currentSec = 19;
+    setInterval(function() {
+      currentSec = currentSec > 0 ? currentSec - 1 : 59;
+      secEl.textContent = currentSec < 10 ? '0' + currentSec : currentSec;
+    }, 1000);
+  })();
+</script></main><div class="fixed bottom-6 right-6 z-40 flex items-center group"><div class="hidden md:flex mr-3 px-3.5 py-2 bg-surface-container-lowest text-on-surface rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.12)] text-body-sm font-label-md items-center gap-2"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#10B981]"></span></span><span>¿Dudas con tu repuesto? Consulta un mecánico asesor</span></div><a aria-label="WhatsApp Asesoría Técnica" class="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_10px_15px_-3px_rgba(16,185,129,0.35)] hover:scale-105 transition-transform" href="https://wa.me/573109876543" target="_blank"><span class="material-symbols-outlined text-[32px]">chat</span></a></div><footer class="w-full bg-inverse-surface text-inverse-on-surface mt-space-xl pt-14 pb-8"><div class="max-w-[1320px] mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-12"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><img alt="AutoParts Colombia Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5DARRoP09XUbnwq25lzeXzJO30It9Kep5YLrLClr_pBj4t-S5iEsFYawyvHf3NpHi8DyqvkeZME6Qm4_3sYqyQSRmnS2E9y4YfhHffIBY_xDVFnbZXXBzqzpvUwCVf2c48Az-mq6VbJ4K0jupAQQUBj6jZ4c_wW-UnO7RAjnJZx7VHJdpkKPzvX7phrq2PNLD_JB1ci5A8mZYVJa2CYUue6EFx6MZUyBP8PLPzDPU-W4xQmDKS_c8SzHp"/><span class="text-headline-sm font-headline-sm tracking-tight text-surface-container-lowest uppercase">AUTOPARTS</span></div><p class="text-body-sm font-body-sm text-surface-dim leading-relaxed">Plataforma líder en distribución técnica de repuestos y autopartes en Colombia. Calidad certificada OEM y aftermarket premium para flotas, talleres y conductores exigentes.</p><div class="flex flex-col gap-1.5 text-body-sm text-surface-container-high pt-2"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-primary-fixed">location_on</span><span>Bogotá D.C.: Calle 63 # 24-18, 7 de Agosto</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-primary-fixed">store</span><span>Medellín: Cra 52 # 38-42, Barrio Triste</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">verified</span><span>Certificación de Repuesto 100% Original</span></div></div></div><div class="flex flex-col gap-3"><span class="text-label-md font-label-md uppercase tracking-wider text-surface-container-lowest">Categorías Principales</span><ul class="flex flex-col gap-2.5 text-body-sm text-surface-dim font-body-sm"><li class="hover:text-surface-container-lowest transition-colors"><a data-path="repuestos-frenos" href="#">Frenos Cerámicos y Discos Ventilados</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="filtros-automotrices" href="#">Filtros de Alto Flujo y Cabina</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="suspension-y-direccion" href="#">Amortiguadores de Gas y Espirales</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="lubricantes-y-fluidos" href="#">Lubricantes Sintéticos 5W-30 / 10W-40</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="repuestos-motor" href="#">Bujías de Iridio y Cables de Alta</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="repuestos-motor" href="#">Kits de Distribución y Correas</a></li></ul></div><div class="flex flex-col gap-3"><span class="text-label-md font-label-md uppercase tracking-wider text-surface-container-lowest">Atención al Cliente</span><ul class="flex flex-col gap-2.5 text-body-sm text-surface-dim font-body-sm"><li class="hover:text-surface-container-lowest transition-colors"><a data-path="guia-de-compra" href="#">¿Cómo comprar en línea?</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="compatibilidad-vehicular" href="#">Guía de compatibilidad vehicular por VIN</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="politicas-de-envio" href="#">Políticas de envío nacional (Servientrega / Envía)</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="garantias-y-devoluciones" href="#">Garantía y devoluciones de 30 días</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="preguntas-frecuentes" href="#">Centro de Preguntas Frecuentes (FAQ)</a></li></ul></div><div class="flex flex-col gap-3"><span class="text-label-md font-label-md uppercase tracking-wider text-surface-container-lowest">Medios de Pago Colombia</span><p class="text-body-sm text-surface-dim font-body-sm">Transacciones seguras encriptadas SSL 256-bit con pasarelas autorizadas.</p><div class="grid grid-cols-3 gap-2 pt-1"><div class="bg-surface-container-lowest/10 p-2 rounded-lg text-center flex flex-col items-center justify-center"><span class="text-label-sm font-label-sm text-surface-container-lowest">PSE</span><span class="text-[9px] text-surface-dim">Débito Bancario</span></div><div class="bg-surface-container-lowest/10 p-2 rounded-lg text-center flex flex-col items-center justify-center"><span class="text-label-sm font-label-sm text-surface-container-lowest">Bancolombia</span><span class="text-[9px] text-surface-dim">Botón &amp; QR</span></div><div class="bg-surface-container-lowest/10 p-2 rounded-lg text-center flex flex-col items-center justify-center"><span class="text-label-sm font-label-sm text-surface-container-lowest">Nequi</span><span class="text-[9px] text-surface-dim">Transferencia</span></div><div class="bg-surface-container-lowest/10 p-2 rounded-lg text-center flex flex-col items-center justify-center"><span class="text-label-sm font-label-sm text-surface-container-lowest">DaviPlata</span><span class="text-[9px] text-surface-dim">Monedero</span></div><div class="bg-surface-container-lowest/10 p-2 rounded-lg text-center flex flex-col items-center justify-center"><span class="text-label-sm font-label-sm text-surface-container-lowest">Tarjetas</span><span class="text-[9px] text-surface-dim">Visa/Master/Amex</span></div><div class="bg-surface-container-lowest/10 p-2 rounded-lg text-center flex flex-col items-center justify-center"><span class="text-label-sm font-label-sm text-surface-container-lowest">Contraentrega</span><span class="text-[9px] text-surface-dim">Pago en Casa</span></div></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between text-body-sm text-surface-dim font-body-sm gap-3"><p>© 2025 AutoParts Colombia S.A.S. - NIT 901.458.921-3. Todos los derechos reservados.</p><p class="text-surface-container-high text-[11px]">Vigilado por la Superintendencia de Industria y Comercio (SIC).</p></div></div></footer></body></html>
